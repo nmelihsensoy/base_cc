@@ -14,12 +14,12 @@ Base_Conversion *base;
 ## Usage
 
 ```cpp
-int a = base->dec2Hex(78)   // '4e'
-int a = base->hex2Dec("4e") // 78
-int a = base->dec2Bin(10)   // 1010  
-int a = base->bin2Dec(1010) // 10
-int a = base->dec2Oct(235)  // 353
-int a = base->oct2Dec(353)  // 235
+int a = base->dec2Hex(78);   // '4e'
+int a = base->hex2Dec("4e"); // 78
+int a = base->dec2Bin(10);   // 1010  
+int a = base->bin2Dec(1010); // 10
+int a = base->dec2Oct(235);  // 353
+int a = base->oct2Dec(353);  // 235
 ```
 
 ### How to convert any number base to decimal?
