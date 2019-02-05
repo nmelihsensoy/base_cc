@@ -2,46 +2,46 @@
 A simple library for convert number bases
 
 ## Installation
-```
+```cpp
 #include "base_conversion.h"
 ```
 
 ## Initialization
-```
+```cpp
 Base_Conversion *base;
 ```
 
 ## Usage
 
-```
-base->dec2Hex(78)   // '4e'
-base->hex2Dec("4e") // 78
-base->dec2Bin(10)   // 1010  
-base->bin2Dec(1010) // 10
-base->dec2Oct(235)  // 353
-base->oct2Dec(353)  // 235
+```cpp
+int a = base->dec2Hex(78)   // '4e'
+int a = base->hex2Dec("4e") // 78
+int a = base->dec2Bin(10)   // 1010  
+int a = base->bin2Dec(1010) // 10
+int a = base->dec2Oct(235)  // 353
+int a = base->oct2Dec(353)  // 235
 ```
 
 ### How to convert any number base to decimal?
-```
-int b = base->toDecimal(3422, 5);  //487
-int c = base->toDecimal("4e", 16); //78
-int d = base->toDecimal("0x4e", 16);   //78
+```cpp
+int b = base->toDecimal(3422, 5);    //487
+int c = base->toDecimal("4e", 16);   //78
+int d = base->toDecimal("0x4e", 16); //78
 ```
 
 ### How to convert decimal number to any base?
-```
+```cpp
 char* e = base->decimalTo(78, 16);   //'4e'
 int f = base->decimalToInt(487, 5);  //3422
 ```
 
 ### How to convert any base to desired base?
-```
+```cpp
 int g = base->base2Base(45, 13, 6); //133
 ```
 
 ### How to count digits of a number?
-```
+```cpp
 int a = base->countDigit(487123456781); //12
 ```
 
